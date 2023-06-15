@@ -1,0 +1,24 @@
+package com.example.team.mapper;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
+
+
+import com.example.team.model.Rstrjoin;
+
+@Repository
+@Mapper
+public interface RstrjoinMapper {
+	
+	
+	public List<Rstrjoin> getRstrjoinList();
+
+	public Rstrjoin getRead(String rstr_nm);
+	
+	public List<Rstrjoin> ranGetList();
+	
+	
+
+}
