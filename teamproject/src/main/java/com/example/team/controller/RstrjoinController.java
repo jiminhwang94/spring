@@ -36,4 +36,12 @@ public class RstrjoinController {
 	public List<Rstrjoin> randlist() {
 		return rstrjoinService.rangetList();
 	}
+	
+	@GetMapping("/getsearch")
+	public Rstrjoin getsearch(@Param("rstr_nm") String rstr_nm) {
+		Rstrjoin rstr = rstrjoinService.getsearch(rstr_nm);
+		System.out.println("살짝쿵 가져온데이............+Rstr");
+		return rstr;
+		
+	}
 }

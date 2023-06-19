@@ -18,6 +18,8 @@ public interface RstrjoinMapper {
 	public Rstrjoin getRead(String rstr_nm);
 	
 	public List<Rstrjoin> ranGetList();
+
+	public Rstrjoin getsearch(String rstr_nm);
 	
 	
 

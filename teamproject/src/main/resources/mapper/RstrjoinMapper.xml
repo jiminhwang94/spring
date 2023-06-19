@@ -16,8 +16,11 @@
 	</select>
 	
 	<select id="ranGetList" resultType="com.example.team.model.Rstrjoin">
-		select rstr_nm, rstr_img from rstrjoin order by rand() limit 4
+		select * from rstrjoin order by rand() limit 4
 	</select>
 	
+	<select id="getsearch" resultType="com.example.team.model.Rstrjoin">
+		select * from rstrjoin where rstr_nm = #{rstr_nm}
+	</select>
 
 </mapper>

@@ -13,4 +13,5 @@ public interface RstrjoinService {
 	
 	public List<Rstrjoin> rangetList();
 
+	public Rstrjoin getsearch(String rstr_nm);
 }

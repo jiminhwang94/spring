@@ -32,6 +32,11 @@ public class RstrjoinServiceImpl implements RstrjoinService {
 	public List<Rstrjoin> rangetList() {
 		return rstrMapper.ranGetList();
 	}
+
+	@Override
+	public Rstrjoin getsearch(String rstr_nm) { 
+		return rstrMapper.getsearch(rstr_nm);
+	}
 	
 
 }

@@ -14,5 +14,6 @@ public class Rstrjoin {
 	private String rstr_list;
 	private String rstr_intro;
 	private String rstr_img;
+	private String rstr_popularity;
 
 }
